@@ -1,0 +1,7 @@
+# robots.txt generated at http://tool.chinaz.com/robots/ 
+User-agent: *
+Disallow: 
+Disallow: /js/
+Disallow: /css/
+Sitemap: http://www.runningsky.top/sitemap.xml
+Sitemap: http://www.runningsky.top/baidusitemap.xml
