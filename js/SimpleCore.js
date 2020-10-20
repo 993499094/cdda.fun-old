@@ -820,7 +820,7 @@ var SimpleCore = {
      */
     registerFKeyEvent: function(e) {
         $(document).on('keyup', function(event) {
-            var shouldShowSearchPopup = event.which === 70
+            var shouldShowSearchPopup = (event.shiftKey && event.keyCode === 70)
                 && $('.search-popup').is(':hidden');
             if (shouldShowSearchPopup) {
                 LocalSearch.doSearch(e);
