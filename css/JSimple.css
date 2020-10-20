@@ -1057,7 +1057,7 @@ body.night-mode,.night-mode .btn,body.night-mode a,.night-mode .nav-user a,#sear
 }
 .markdown-body a {
     color:#2eabfd
-}
+}/*超链接ff4081*/
 .markdown-body img {
     max-width:100%
 }
@@ -1304,10 +1304,10 @@ body.night-mode,.night-mode .btn,body.night-mode a,.night-mode .nav-user a,#sear
     font-family:"Source Code Pro",Consolas,Monaco,Menlo,Consolas,monospace;
 }
 .markdown-body code {
-    background:rgba(208,211,248,0.2);
-    color:#333;
+    background:rgba(221,221,221,0.3);
+    color:#42b983;
     padding:0 0.3em;
-}
+}/*高亮颜色*/
 .markdown-body pre code {
     background:none;
     text-shadow:none;

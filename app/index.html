@@ -127,14 +127,15 @@
                 </a>
                 <p><span class="label">作者</span>
                     <a href="https://cdda.fun" target="_blank">苏大妈</a>
-                    <span title="最后编辑于&nbsp;2018-06-27">2018-06-27</span>
+                    <span title="发布日期&nbsp;2018-06-27 最后编辑于 2019-06-03">2019-06-03</span>
                 </p>
                 <p>鸽王</p>
             </div>
             <h2 class="post-title">移动互联网？</h2>
             <div class="post-meta">
                 本文共计435个字 |
-                您是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+                您是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴 |
+                <span title="发布日期&nbsp;2018-06-27 最后编辑于 2019-06-03">发布日期 2018-06-27 最后编辑于 2019-06-03</span>
             </div>
         </div>
         <div class="post-content markdown-body">
@@ -164,12 +165,14 @@
     window.onload = function() {
         new Valine({
             el: '.comment',
+			enableQQ: true,
             notify: notify,
             verify: verify,
             app_id: "yGEx4S4HwUraibiUdyrounW0-gzGzoHsz",
             app_key: "ttTrUW61Vds7fjRsV3ji5Em3",
-            placeholder: "无需登录,欢迎灌水~",
-            avatar:"retro"
+            placeholder: "昵称输入QQ可识别头像、昵称与邮箱~(●&#39;◡&#39;●)\n欢迎学习交流~",
+            avatar:"monsterid",
+			meta: ["nick", "mail", "link"]
         });
     }
 </script>
@@ -232,8 +235,8 @@
             jsi_config.localSearch = {
                 dbPath: '/search.json',
                 trigger: 'auto',
-                topN: '1',
-                unescape: 'false'
+                topN: '-1',
+                unescape: 'true'
             }
         
         SimpleCore.init(jsi_config);

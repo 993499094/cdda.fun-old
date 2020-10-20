@@ -623,7 +623,7 @@ var SimpleCore = {
         $(document).on('click', '.btn-thumbs-up', function (e) {
             e.preventDefault();
             if (SimpleCore.donateImg != '') {
-                SimpleCore.alert('让我暴富','<img style="width:380px;background:#fff;" src="' + SimpleCore.donateImg + '">');
+                SimpleCore.alert('打钱!','<img style="width:380px;background:#fff;" src="' + SimpleCore.donateImg + '">');
             } else {
                 SimpleCore.alert('未开通自定义功能','<h4 style="text-align: center;margin: 0">联系站长试试看 ：）</h4>');
             }
