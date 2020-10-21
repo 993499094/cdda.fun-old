@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<script type="text/javascript">
+ window.onload =
+ function() {
+ var linkList = window.parent.document.getElementsByTagName("link"); //获取父窗口link标签对象列表
+ var head = document.getElementsByTagName("head").item(0);
+ //外联样式
+ for(var i = 0; i < linkList.length; i++) {
+ var l = document.createElement("link");
+ l.rel = 'stylesheet'
+ l.type = 'text/css';
+ l.href = linkList[i].href;
+ head.appendChild(l);
+ }
+ }
+</script> 
+</head>
+
+<body>
+<input type="button" value="苏大妈" style="color:#2eabfd; line-height:20px; height:20px; margin:0px; padding:0px; border:0px;">
+<input type="button" id="回复" value="：“..”" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"><br>
+<input type="button" value="再见，下次再聊。" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"><br>
+<a href="0对话.html"><input type="button" id="0对话" value="  1. 我回来了~" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+
+<script type="text/javascript">
+<!--问候列表//-->
+var len=7;
+var rnd=Math.floor(Math.random()*len);
+var txt=new Array(len);
+txt[0]="再见。";
+txt[1]="和你聊天很愉快，再见。";
+txt[2]="再见了，混蛋！";
+txt[3]="好的，再见。";
+txt[4]="我懂了，再见！";
+txt[5]="再见，宝贝。（注：《终结者2（1991）》）";
+txt[6]="拜拜~";
+document.getElementById('回复').value=("：“")+txt[rnd]+("”");
+</script> 
+</body>
+</html>

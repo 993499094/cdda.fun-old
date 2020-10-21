@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<script type="text/javascript">
+ window.onload =
+ function() {
+ var linkList = window.parent.document.getElementsByTagName("link"); //获取父窗口link标签对象列表
+ var head = document.getElementsByTagName("head").item(0);
+ //外联样式
+ for(var i = 0; i < linkList.length; i++) {
+ var l = document.createElement("link");
+ l.rel = 'stylesheet'
+ l.type = 'text/css';
+ l.href = linkList[i].href;
+ head.appendChild(l);
+ }
+ }
+</script> 
+</head>
+
+<body>
+<input type="button" value="苏大妈" style="color:#2eabfd; line-height:20px; height:20px; margin:0px; padding:0px; border:0px;">
+<input type="button" id="回复" value="：“..”" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"><br>
+<input type="button" value="我想你帮我写一些mod物品和贴图。" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"><br>
+<a href="0对话.html"><input type="button" id="0对话" value="  1. 我明白了，我们谈谈其他。" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+<a href="7再见.html"><input type="button" id="2再见" value="  2. 再见。" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+
+<script type="text/javascript">
+<!--问候列表//-->
+var len=8;
+var rnd=Math.floor(Math.random()*len);
+var txt=new Array(len);
+txt[0]="等我有空~";
+txt[1]="下次一定！";
+txt[2]="成功的达成了共识~";
+txt[3]="打钱！";
+txt[4]="好的，";
+txt[5]="没问题！";
+txt[6]="好吧，那就谈正事吧。";
+txt[7]="打钱！！";
+document.getElementById('回复').value=("：“")+txt[rnd]+("需要什么请在下面留言，不过内容必须合理，而且不得违背宪法所确定的基本原则。”");
+</script> 
+</body>
+</html>

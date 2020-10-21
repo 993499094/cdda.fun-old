@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<script type="text/javascript">
+ window.onload =
+ function() {
+ var linkList = window.parent.document.getElementsByTagName("link"); //获取父窗口link标签对象列表
+ var head = document.getElementsByTagName("head").item(0);
+ //外联样式
+ for(var i = 0; i < linkList.length; i++) {
+ var l = document.createElement("link");
+ l.rel = 'stylesheet'
+ l.type = 'text/css';
+ l.href = linkList[i].href;
+ head.appendChild(l);
+ }
+ }
+</script> 
+</head>
+<body>
+<input type="button" value="苏大妈" style="color:#2eabfd; line-height:20px; height:20px; margin:0px; padding:0px; border:0px;">
+<input type="button" id="问候" value="：“欢迎光临，幸存者！”" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"><br>
+<input type="button" value=" " style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"><br>
+<a href="1询问.html"><input type="button" id="1询问" value="  1. [询问]你在做些什么？我在哪里可以找到你？" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+<a href="2询问.html"><input type="button" id="2询问" value="  2. [询问]可以教我写mod吗？" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+<a href="3工作.html"><input type="button" id="3工作" value="  3. [工作]我想你帮我写一些mod物品和贴图。" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+<a href="4交易.html"><input type="button" id="4交易" value="  4. [交易]我想和你交易！" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+<a href="5威胁.html"><input type="button" id="5威胁" value="  5. [威胁 1%]把你的武器放下！" style="color:red;line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+<a href="6威胁.html"><input type="button" id="6威胁" value="  6. [威胁 1%]给老子滚开，否则我对你不客气！" style="color:red;line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+<a href="7再见.html"><input type="button" id="7再见" value="  7. 再见。" style="line-height:20px; height:20px; margin:0px; padding:0px; border:0px;"></a><br>
+
+<script type="text/javascript">
+<!--问候列表//-->
+var len=7;
+var rnd=Math.floor(Math.random()*len);
+var txt=new Array(len);
+txt[0]="欢迎光临，幸存者！";
+txt[1]="嘿，兄逮！";
+txt[2]="嘿，同志！";
+txt[3]="嘿，旅行者兄弟！";
+txt[4]="嘿，伙计！";
+txt[5]="今天有啥收获吗？";
+txt[6]="你在找什么？";
+document.getElementById('问候').value=("：“")+txt[rnd]+("”");
+</script> 
+</body>
+</html>
